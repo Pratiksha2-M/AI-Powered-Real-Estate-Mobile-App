@@ -1,8 +1,8 @@
-# 🏠 AI-Powered Real Estate Mobile App
+# 🪹 NEST - Next Generation Estate Technology
 
-A cross-platform mobile marketplace application built with **Flutter (Dart)** and an **Interactive Web App Preview (React + Vite + Tailwind CSS)**. 
+A cross-platform mobile marketplace application built with **Flutter (Dart)** and an **Interactive Web Application (React + Vite + Tailwind CSS)**.
 
-The application connects **Owners**, **Builders**, and **Buyers** under a single account system with dynamic role-switching, AI valuation engines, multi-property Ask AI comparative reasoning, Uber-style telephony call masking, watermarked legal document protection, and real-time builder analytics.
+**NEST** connects **Owners**, **Builders**, and **Buyers** under a single account system with dynamic role-switching, AI valuation engines, Ask AI comparative reasoning, Uber-style telephony call masking, watermarked legal document security, and real-time builder analytics.
 
 ---
 
@@ -38,15 +38,15 @@ The application connects **Owners**, **Builders**, and **Buyers** under a single
   4. Preferred BHK Configuration
   5. Personalized Feed Initialization
 
-### 3. 🤖 AI Engine Layer
+### 3. 🤖 NEST AI Engine Layer
 - **AI Natural Language & Voice Search**: Semantic search bar parsing queries like *"3BHK under 1.5 Cr in Whitefield near top schools"* with voice input support.
 - **AI Property Valuation & 5-Year Growth Forecast**: Fair market value estimator and 5-year capital appreciation projection curve powered by local infrastructure signals.
-- **Ask AI Property Comparison**: Side-by-side comparative analysis of live listings calculating a **Unified Property Suitability Score (0-100%)**, *"Why Choose / Why Not"* reasoning, and environmental & geological risk profiles (seismic zone, flood risk, AQI, groundwater table).
-- **Persistent AI Property Assistant**: Floating chat widget providing context-specific answers on maintenance costs, Vastu compliance, and renovation ideas.
+- **Ask NEST AI Property Comparison**: Side-by-side comparative analysis of live listings calculating a **Unified Property Suitability Score (0-100%)**, *"Why Choose / Why Not"* reasoning, and environmental & geological risk profiles (seismic zone, flood risk, AQI, groundwater table).
+- **Persistent NEST AI Assistant**: Floating chat widget providing context-specific answers on maintenance costs, Vastu compliance, and renovation ideas.
 
 ### 4. 🛡️ Privacy, Safety & Telephony Call Masking
 - **Uber-Style Call Masking**: Generates temporary virtual proxy numbers (e.g. `+1 (888) 555-XXXX`) for buyer-seller contacts with 30-minute expiring sessions to keep real phone numbers private.
-- **Encrypted Legal Document Protection**: Uploaded title deeds, RERA registrations, and tax receipts are protected by **dynamic watermarking canvas previewers** (`CONFIDENTIAL • VERIFIED BUYER PREVIEW ONLY`), disabling direct downloading, and logging audit access trails.
+- **Encrypted Legal Document Protection**: Uploaded title deeds, RERA registrations, and tax receipts are protected by **dynamic watermarking canvas previewers** (`CONFIDENTIAL • NEST VERIFIED PREVIEW`), disabling direct downloading, and logging audit access trails.
 
 ### 5. ⚡ Flash Ads & Builder Analytics
 - **Flash Ads Carousel**: Rotating sponsored builder project banners featuring custom countdown timers and discount badges (*"5% Early Bird Discount before Nov 30"*).
@@ -57,65 +57,23 @@ The application connects **Owners**, **Builders**, and **Buyers** under a single
 ## 🏗️ Tech Stack
 
 - **Mobile Framework**: Flutter (Dart) — Cross-platform Android + iOS from one codebase
-- **Web App Preview**: React 19, Vite, Tailwind CSS v4, Lucide Icons, Recharts
+- **Web App**: React 19, Vite, Tailwind CSS v4, Lucide Icons, Recharts
 - **State Management**: Provider (Flutter) / React Context
 - **Design System**: Dark Mode, Glassmorphism, Responsive Mobile Frame
 
 ---
 
-## 📁 Repository Structure
-
-```
-.
-├── lib/                             # Complete Flutter (Dart) Mobile Application
-│   ├── main.dart                    # App Entry Point & Theme Setup
-│   ├── models/                      # Property, UserRole, & AI Analysis Models
-│   ├── providers/                   # App State Provider
-│   ├── services/                    # AIService, TelephonyMaskingService, DocumentSecurityService
-│   └── screens/                     # Home, Onboarding Wizards, AI Valuation, & Compare Screens
-├── src/                             # Interactive Web App Preview
-│   ├── components/                  # Header, FlashAdCarousel, PropertyCard, AI Modals, WatermarkViewer
-│   ├── data/                        # Mock Property Dataset & RERA Records
-│   ├── App.jsx                      # Main Web Application Component
-│   ├── main.jsx                     # Web Entry Point
-│   └── index.css                    # Tailwind CSS & Glassmorphism Utilities
-├── pubspec.yaml                     # Flutter Dependencies Manifest
-├── package.json                     # Node / Vite Web Dependencies
-└── vite.config.js                   # Vite Configuration
-```
-
----
-
 ## 🚀 Running the Project
 
-### Option A: Interactive Web App Preview
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Pratiksha2-M/AI-Powered-Real-Estate-Mobile-App.git
-   cd AI-Powered-Real-Estate-Mobile-App
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Launch the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open `http://localhost:3000` in your browser.
+```bash
+# 1. Install dependencies
+npm install
 
-### Option B: Flutter Mobile App (Android / iOS)
-1. Ensure Flutter SDK is installed.
-2. Run pub get:
-   ```bash
-   flutter pub get
-   ```
-3. Run on device or emulator:
-   ```bash
-   flutter run
-   ```
+# 2. Run local development server
+npm run dev
+```
 
 ---
 
 ## 📜 License
-This project is licensed under the MIT License.
+Licensed under the MIT License.

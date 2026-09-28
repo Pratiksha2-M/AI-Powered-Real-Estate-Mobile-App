@@ -1,23 +1,25 @@
 import React from 'react';
-import { ShieldCheck, Sparkles, Building2, User, PhoneCall, Bot } from 'lucide-react';
+import { ShieldCheck, Sparkles, Building2, User, PhoneCall, Bot, Home, Layers } from 'lucide-react';
 
 export default function Header({ activeRole, setRole, onOpenAssistant, onOpenCompare }) {
   return (
-    <header className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 py-3">
+    <header className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-4 py-3 shadow-xl">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
         {/* Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/25">
-            <Sparkles className="w-5 h-5 text-white animate-pulse" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+            <Layers className="w-5 h-5 text-white animate-pulse" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="font-bold text-lg text-white tracking-tight">EstatoCopilot AI</h1>
-              <span className="bg-indigo-500/20 text-indigo-300 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-indigo-500/30">
-                Flutter & Web Mobile
+              <h1 className="font-extrabold text-xl text-white tracking-wider font-mono">
+                NEST
+              </h1>
+              <span className="bg-gradient-to-r from-amber-500/20 to-indigo-500/20 text-amber-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-amber-500/40">
+                Next Generation Estate Technology
               </span>
             </div>
-            <p className="text-xs text-slate-400">AI-Powered Real Estate Marketplace & Security Platform</p>
+            <p className="text-xs text-slate-400">AI Marketplace • Uber-Style Masking • Watermarked Doc Vault</p>
           </div>
         </div>
 
@@ -28,7 +30,7 @@ export default function Header({ activeRole, setRole, onOpenAssistant, onOpenCom
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-colors"
           >
             <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-            <span>Ask AI Comparison</span>
+            <span>Ask NEST AI</span>
           </button>
 
           <button
@@ -36,7 +38,7 @@ export default function Header({ activeRole, setRole, onOpenAssistant, onOpenCom
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600/20 text-indigo-300 hover:bg-indigo-600/30 text-xs font-medium border border-indigo-500/30 transition-colors"
           >
             <Bot className="w-3.5 h-3.5 text-indigo-400" />
-            <span>AI Assistant</span>
+            <span>NEST Assistant</span>
           </button>
 
           {/* Role Switcher Toggle */}

@@ -9,22 +9,22 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => AppProvider()),
       ],
-      child: const RealEstateApp(),
+      child: const NestEstateApp(),
     ),
   );
 }
 
-class RealEstateApp extends StatelessWidget {
-  const RealEstateApp({super.key});
+class NestEstateApp extends StatelessWidget {
+  const NestEstateApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AI Real Estate Copilot',
+      title: 'NEST - Next Generation Estate Technology',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6366F1),
+          seedColor: const Color(0xFFF59E0B), // Amber branding
           brightness: Brightness.dark,
         ),
         useMaterial3: true,

@@ -3,8 +3,8 @@ import { X, PhoneCall, ShieldCheck, Clock, CheckCircle, Volume2, Mic, Lock } fro
 
 export default function CallMaskingModal({ property, onClose }) {
   const [session, setSession] = useState(null);
-  const [callStatus, setCallStatus] = useState('connecting'); // connecting | active | ended
-  const [timerSeconds, setTimerSeconds] = useState(1800); // 30 mins
+  const [callStatus, setCallStatus] = useState('connecting');
+  const [timerSeconds, setTimerSeconds] = useState(1800);
 
   useEffect(() => {
     if (!property) return;
@@ -54,18 +54,18 @@ export default function CallMaskingModal({ property, onClose }) {
 
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30 mb-2">
-            <Lock className="w-3 h-3" /> Uber-Style Telephony Masked Session
+            <Lock className="w-3 h-3" /> NEST Uber-Style Telephony Route
           </div>
-          <h2 className="text-xl font-bold text-white">Call Route Connected</h2>
-          <p className="text-xs text-slate-400 mt-1">Connecting buyer to {session.sellerName} via encrypted proxy line</p>
+          <h2 className="text-xl font-bold text-white">Proxy Call Route Connected</h2>
+          <p className="text-xs text-slate-400 mt-1">Connecting buyer to {session.sellerName} via NEST proxy line</p>
         </div>
 
         {/* Proxy Number Box */}
         <div className="bg-slate-900/90 p-4 rounded-xl border border-slate-800 space-y-2">
-          <div className="text-xs text-slate-400 font-medium">Virtual Masked Proxy Line</div>
+          <div className="text-xs text-slate-400 font-medium">NEST Encrypted Virtual Proxy Line</div>
           <div className="text-2xl font-black text-emerald-400 tracking-wider font-mono">{session.proxyNumber}</div>
           <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> Real Phone Numbers Hidden from Both Parties
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> Real Phone Numbers Protected on Both Ends
           </div>
         </div>
 
@@ -94,7 +94,7 @@ export default function CallMaskingModal({ property, onClose }) {
             className="w-full py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm transition-all shadow-lg shadow-red-600/30 flex items-center justify-center gap-2"
           >
             <PhoneCall className="w-4 h-4 rotate-[135deg]" />
-            <span>End Masked Call</span>
+            <span>End NEST Masked Call</span>
           </button>
         </div>
       </div>
