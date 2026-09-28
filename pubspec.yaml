@@ -1,0 +1,32 @@
+name: ai_powered_real_estate_mobile_app
+description: "A cross-platform Flutter real estate marketplace with AI valuation, comparison, assistant, role-switching, and privacy features."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  http: ^1.1.2
+  shared_preferences: ^2.2.2
+  fl_chart: ^0.66.0
+  carousel_slider: ^4.2.1
+  google_fonts: ^6.1.0
+  url_launcher: ^6.2.2
+  image_picker: ^1.0.7
+  flutter_svg: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/docs/
